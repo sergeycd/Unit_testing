@@ -1,13 +1,13 @@
 import  pytest
 
-from main import col_book
+from main import BooksCollector
 
 @pytest.fixture
 def name_book():
-    name_book = col_book.name = "Унесенные ветром"
+    name_book = BooksCollector.name = "Унесенные ветром"
     return name_book
 
 @pytest.fixture
 def rating_book():
-    rating_book = col_book.rating = 6
+    rating_book = BooksCollector.rating = 6
     return rating_book
